@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="magentoecommerceSuite">
+   
+   <listeners>
+   
+    <listener class-name= "com.magentoecommerceproject.utilities.ExtentReportManager"/>
+
+  </listeners>
+
+
+
+ <test thread-count="5" name="ChromeTest">
+    
+     <parameter name="browser" value="chrome"/>
+    
+    <classes>
+    
+      <!--  <class name="com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyCostOfProductInListPageAndDetailPageAreEqual_002"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyYouAreAbleToCompareTwoProducts_004"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyComparingTwoProducts_000"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyDiscountCouponWorksCorrectly_009"/>
+      <class name="com.magentoecommerceproject.testCases.ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010"/>-->
+      <class name="com.magentoecommerceproject.testCases.VerifyInvoiceCanBePrinted_011"/>
+      <!-- <class name="com.magentoecommerceproject.testCases.VerifyTheProductReviewMechanism_012"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013"/>
+      <class name="com.magentoecommerceproject.testCases.VerifySearchFunctionality_014"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyDisabledAndBlankFields_015"/>-->
+      
+    </classes>
+    
+    
+  </test> 
+  
+ <!--  <test thread-count="5" name="FirefoxTest">
+    
+     <parameter name="browser" value="firefox"/>
+    
+    <classes>
+    
+      <class name="com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyCostOfProductInListPageAndDetailPageAreEqual_002"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyYouAreAbleToCompareTwoProducts_004"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyComparingTwoProducts_000"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyDiscountCouponWorksCorrectly_009"/>
+      <class name="com.magentoecommerceproject.testCases.ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyInvoiceCanBePrinted_011"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyTheProductReviewMechanism_012"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013"/>
+      <class name="com.magentoecommerceproject.testCases.VerifySearchFunctionality_014"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyDisabledAndBlankFields_015"/>
+      
+    </classes>
+    
+    
+  </test> -->
+  
+</suite> 
