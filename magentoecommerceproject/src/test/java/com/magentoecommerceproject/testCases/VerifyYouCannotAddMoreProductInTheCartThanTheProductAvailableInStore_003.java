@@ -1,5 +1,7 @@
 package com.magentoecommerceproject.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,10 +15,11 @@ public class VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStor
 	public ProceedToCheckOutPage pcopObj;
 	
 	@Test
-	public void verifyingMoreProductCanNotAddToTheCartThanAvailableInStore() throws InterruptedException
+	public void verifyingMoreProductCanNotAddToTheCartThanAvailableInStore() throws InterruptedException, IOException
 	{
 		   driver.get(propObj.getProperty("baseURL"));
 		   hpObj=new HomePage(driver);
+		   logger.info("*****************************Starting of VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003******************************");
 		   hpObj.clickOnMobileLink();
 		   Thread.sleep(3000);
 		   hpObj.clickOnAddToCartForSonyXperiaMobile("Sony Xperia");
@@ -25,22 +28,30 @@ public class VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStor
 		   
 		   boolean errorMsgStatus=pcopObj.verifyingErrorMsgAfterClickingUpadateBtn("Some of the products cannot be ordered in requested quantity.");
 		   if(errorMsgStatus==true)
-		   {
+		   {  
+			   logger.info("*********************Error msg verification is successful********************");
 			   Assert.assertTrue(true);
 		   }
 		   else
-		   {
-			   Assert.assertTrue(false);
+		   {   
+			   logger.info("***********************Error msg verification is not successful******************");
+			   captureScreen(driver, "verifyingMoreProductCanNotAddToTheCartThanAvailableInStore");
+		       Assert.assertTrue(false);
 		   }
 		   Thread.sleep(3000);
 	}
 	
 	@Test(dependsOnMethods="verifyingMoreProductCanNotAddToTheCartThanAvailableInStore")
 	
-	public void verifyingEmptyCartConfirmationMsg() throws InterruptedException
+	public void verifyingEmptyCartConfirmationMsg() throws InterruptedException, IOException
 	{
 		boolean emptyCartMsgStatus= pcopObj.verifyingEmptyCartMsg("SHOPPING CART IS EMPTY");
+		
+		logger.info("************************Empty cart confirmation msg is successful*******************");
+		captureScreen(driver, "verifyingEmptyCartConfirmationMsg");
 		Assert.assertEquals(emptyCartMsgStatus, true);
 		Thread.sleep(6000);
+		
+		logger.info("********************************Ending of VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003*****************************");
 	}
 }

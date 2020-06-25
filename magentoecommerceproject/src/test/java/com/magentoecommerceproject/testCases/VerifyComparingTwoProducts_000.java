@@ -1,5 +1,7 @@
 package com.magentoecommerceproject.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,10 +13,12 @@ public class VerifyComparingTwoProducts_000 extends BaseClass {
 	public HomePage hpObj;
 	
 	@Test
-	public void verifyingCompareProductsInThePopUpWindow() throws InterruptedException
+	public void verifyingCompareProductsInThePopUpWindow() throws InterruptedException, IOException
 	{
 		   driver.get(propObj.getProperty("baseURL"));
 		   hpObj=new HomePage(driver);
+		   
+		   logger.info("****************Starting VerifyComparingTwoProducts_000***********************");
 		   hpObj.clickOnMobileLink();
 		   Thread.sleep(3000);
 		   hpObj.clickOnAddToCompareBtnForSonyXperiaMobile("Sony Xperia");
@@ -32,11 +36,14 @@ public class VerifyComparingTwoProducts_000 extends BaseClass {
 		   boolean b2= hpObj.verifyingHomepageTitle("Mobile");
 		   Thread.sleep(3000);
 		   if((b1==true)&&(b2==true))
-		   {
+		   {   
+               logger.info("*********************Popup Window And HomePage Title Verification Are Successful*********************");
 			   Assert.assertTrue(true);
 		   }
 		   else
-		   {
+		   {   
+			   logger.warn("*********************Popup Window And HomePage Title Verification are not Successful*****************");
+			   captureScreen(driver, "verifyingCompareProductsInThePopUpWindow");
 			   Assert.assertTrue(false);
 		   }
 		   

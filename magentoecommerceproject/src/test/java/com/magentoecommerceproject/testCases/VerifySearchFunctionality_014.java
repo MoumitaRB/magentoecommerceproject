@@ -16,6 +16,7 @@ public class VerifySearchFunctionality_014 extends BaseClass{
 	{
 		driver.get(propObj.getProperty("baseURL"));
 	    Thread.sleep(4000);
+	    logger.info("***********************Starting of VerifySearchFunctionality_014***********************");
 	    hpObj=new HomePage(driver);
 	    hpObj.clickOnAdvancedSearchLink();
 	    aspObj=new AdvancedSearchPage(driver);
@@ -23,6 +24,7 @@ public class VerifySearchFunctionality_014 extends BaseClass{
 	    aspObj.setPriceTo("150");
 	    aspObj.clickOnSearchBtn();
 	    Thread.sleep(3000);
+	    logger.info("***********************Printing the product name and price between Rs 0-150*********************" );
 	    aspObj.gettingTheProductNameAndPriceMethod2("SONY XPERIA", "SAMSUNG GALAXY","","100.00","",100.00, 130.00, 0.0);
 	    Thread.sleep(8000);
 	    aspObj.clickOnCatalogAdvancedSearchLink();
@@ -31,10 +33,11 @@ public class VerifySearchFunctionality_014 extends BaseClass{
 	    aspObj.setPriceTo("1000");
 	    aspObj.clickOnSearchBtn();
 	    Thread.sleep(3000);
+	    logger.info("************************Printing the product name and price between Rs 151-1000**********************");
 	    aspObj.gettingTheProductNameAndPriceMethod2("IPHONE", "LG LCD", "SAMSUNG LCD", "500.00", "700.00", 500.00, 615.00, 700.00);
 	    Thread.sleep(7000);
 	    
-	    
+	    logger.info("************************Ending of VerifySearchFunctionality_014**************************");
 	}
 	
 }

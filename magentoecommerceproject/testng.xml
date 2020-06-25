@@ -17,7 +17,7 @@
     
     <classes>
     
-      <!--  <class name="com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001"/>
+      <!-- <class name="com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001"/>
       <class name="com.magentoecommerceproject.testCases.VerifyCostOfProductInListPageAndDetailPageAreEqual_002"/>
       <class name="com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003"/>
       <class name="com.magentoecommerceproject.testCases.VerifyYouAreAbleToCompareTwoProducts_004"/>
@@ -27,12 +27,12 @@
       <class name="com.magentoecommerceproject.testCases.VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007"/>
       <class name="com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008"/>
       <class name="com.magentoecommerceproject.testCases.VerifyDiscountCouponWorksCorrectly_009"/>
-      <class name="com.magentoecommerceproject.testCases.ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010"/>-->
+      <class name="com.magentoecommerceproject.testCases.ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010"/>
       <class name="com.magentoecommerceproject.testCases.VerifyInvoiceCanBePrinted_011"/>
-      <!-- <class name="com.magentoecommerceproject.testCases.VerifyTheProductReviewMechanism_012"/>
-      <class name="com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyTheProductReviewMechanism_012"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013"/>-->
       <class name="com.magentoecommerceproject.testCases.VerifySearchFunctionality_014"/>
-      <class name="com.magentoecommerceproject.testCases.VerifyDisabledAndBlankFields_015"/>-->
+      <!-- <class name="com.magentoecommerceproject.testCases.VerifyDisabledAndBlankFields_015"/>-->
       
     </classes>
     

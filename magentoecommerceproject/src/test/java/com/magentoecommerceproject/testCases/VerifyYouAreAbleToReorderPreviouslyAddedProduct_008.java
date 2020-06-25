@@ -1,5 +1,7 @@
 package com.magentoecommerceproject.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,10 +17,12 @@ public class VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 extends BaseCla
 	public DashBoardPage dbpObj;
 	
 	@Test
-	public void verifyingGrandTotalIsChangedAfterUpdatingTheProductQuantity() throws InterruptedException
+	public void verifyingGrandTotalIsChangedAfterUpdatingTheProductQuantity() throws InterruptedException, IOException
 	{
 		driver.get(propObj.getProperty("baseURL"));
 		hpObj=new HomePage(driver);
+		
+		logger.info("*********************Starting Of VerifyYouAreAbleToReorderPreviouslyAddedProduct_008************************");
 		hpObj.clickOnMyAccountLink();
 		lpObj=new LoginPage(driver);
 		lpObj.setRegisteredEmailId("samit@gmail.com");
@@ -47,11 +51,14 @@ public class VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 extends BaseCla
 		Thread.sleep(3000);
 		boolean orderIdGerenatedStatus=dbpObj.verifyingOrderNumberIsGeneratedAfterReorder("YOUR ORDER HAS BEEN RECEIVED.");
 		if((grandTotalStatus==true)&&(orderIdGerenatedStatus==true))
-		{
+		{   
+			logger.info("********************Verifying GrandToatalStatus and OrderIdGeneratedStatus are successful*****************************");
 			Assert.assertTrue(true);
 		}
 		else
-		{
+		{   
+			logger.warn("***********************Verifying GrandToatalStatus and OrderIdGeneratedStatus are not successful********************");
+			captureScreen(driver, "verifyingGrandTotalIsChangedAfterUpdatingTheProductQuantity");
 			Assert.assertTrue(false);
 		}
 	    Thread.sleep(4000);

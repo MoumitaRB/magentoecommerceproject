@@ -1,5 +1,7 @@
 package com.magentoecommerceproject.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,10 +15,11 @@ public class VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005 exte
 	public LoginPage lpObj;
 	
 	@Test
-	public void verifyingAccountRegistrationDone() throws InterruptedException
+	public void verifyingAccountRegistrationDone() throws InterruptedException, IOException
 	{
 		driver.get(propObj.getProperty("baseURL"));
 		hpObj=new HomePage(driver);
+		logger.info("*************************Starting for VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005************************");
 		hpObj.clickOnMyAccountLink();
 		lpObj=new LoginPage(driver);
 		lpObj.clickOnCreateAccountLink();
@@ -24,6 +27,7 @@ public class VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005 exte
 		String email=randomString()+"@gamil.com";
 		lpObj.setEmailId(email);
 		Thread.sleep(2000);
+		logger.info("**************************Providing information for filling registration form********************");
 		lpObj.fillingRegistrationForm("Amir","Khan","amir1000", "amir1000");
 		Thread.sleep(3000);
 		lpObj.clickOnRegistrationBtn();
@@ -41,15 +45,19 @@ public class VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005 exte
 		Thread.sleep(2000);
 		boolean sharedWishListStatus=lpObj.verifyingSharingWishListConfirmationMsg("Your Wishlist has been shared.");
 		if((registrationStatus==true)&&(sharedWishListStatus==true))
-		{
+		{   
+			logger.info("**********************Registration is done and sharing wishlist is successful**************************" );
 			Assert.assertTrue(true);
 		}
 		else
-		{
+		{   
+			logger.warn("**********************Registration is not done and sharing wishlist is not successful**********************");
+			captureScreen(driver, "verifyingAccountRegistrationDone");
 			Assert.assertTrue(false);
 		}
 		Thread.sleep(3000);
-
+        
+		logger.info("************************Ending of VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005***************************");
 	}
 	
 	

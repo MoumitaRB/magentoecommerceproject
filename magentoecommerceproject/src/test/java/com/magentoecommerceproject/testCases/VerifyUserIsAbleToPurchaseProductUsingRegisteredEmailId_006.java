@@ -1,5 +1,7 @@
 package com.magentoecommerceproject.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,10 +17,12 @@ public class VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006 extends
 	public DashBoardPage dbpObj;
 	
 	@Test
-	public void verifyingFlatRateShippingCostIsAdded() throws InterruptedException
+	public void verifyingFlatRateShippingCostIsAdded() throws InterruptedException, IOException
 	{
 		driver.get(propObj.getProperty("baseURL"));
 		hpObj=new HomePage(driver);
+		
+		logger.info("*******************Starting of VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006**********************");
 		hpObj.clickOnMyAccountLink();
 		lpObj=new LoginPage(driver);
 		lpObj.setRegisteredEmailId("samit@gmail.com");
@@ -36,6 +40,7 @@ public class VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006 extends
 		Thread.sleep(3000);
 		dbpObj.clickOnDropDownBtn("New Address");
 		Thread.sleep(3000);
+		logger.info("*******************Providing informatiom for filling the billing address******************");
 		dbpObj.fillingBillingAddressForm("Samit","Roy","6789 AppleValley", "ClifRoad","Eagan", "New York","542896", "United States","12345678");
 		Thread.sleep(4000);
 		dbpObj.ClickOnContinueBtn();
@@ -54,14 +59,17 @@ public class VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006 extends
 		boolean orderStatus=dbpObj.verifyingOrderIsPlacedAndOrderNumberGenerated("YOUR ORDER HAS BEEN RECEIVED.");
         Thread.sleep(6000);
 		if((taxrateStatus==true)&&(totalStatus==true)&&(orderStatus==true))
-		{
+		{   
+			logger.info("********************Verifyng TaxrateStatus TotalStatus and OrderStatus are successful**********************");
 			Assert.assertTrue(true);
 		}
 		else
-		{
+		{   
+			logger.warn("**********************Verifying TaxrateStatus TotalStatus and OrderStatus are not successful**********************");
+			captureScreen(driver, "verifyingFlatRateShippingCostIsAdded");
 			Assert.assertTrue(false);
 		}
 	
-
-}
+     logger.info("**********************Ending of VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006***************************");
+ }
 }

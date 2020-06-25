@@ -29,8 +29,8 @@ public class ExtentReportManager implements ITestListener{
 		
 		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/Reports/"+repName);//specify location of the report
 				
-		htmlReporter.config().setDocumentTitle("nopCommerce Automation Report"); // Tile of report
-		htmlReporter.config().setReportName("nopCommerce  Functional Testing"); // name of the report
+		htmlReporter.config().setDocumentTitle("magentoEcommerce Automation Report"); // Tile of report
+		htmlReporter.config().setReportName("magentoEcommerce  Functional Testing"); // name of the report
 		htmlReporter.config().setTheme(Theme.DARK);
 		
 		extent=new ExtentReports();

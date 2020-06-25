@@ -84,36 +84,4 @@ public class AdminLoginPage {
 	
 
 
-//	public void selectStatusOptionsFromDropdown(String value)
-//	
-//	{
-//		statusdropdownBtn.click();
-//		Select statusdd=new Select(statusdropdownBtn);
-//		statusdd.selectByVisibleText(value);
-//	}
-//	
-//	public void clickOnSearchBtn()
-//	{
-//		searchBtn.click();
-//		
-//	}
-//	
-//	public void clickOnCheckBox()
-//	{
-//		checkBox.click();
-//	}
-//	
-//	public void selectActionOptionsFromDropdown(String value)
-//	{
-//		actionDropdown.click();
-//		Select actiondd=new Select(actionDropdown);
-//		actiondd.selectByVisibleText(value);
-//	}
-//	
-//	public void clickOnSubmitBtn()
-//	{
-//		submitBtn.click();
-//	}
-//	
-
 }

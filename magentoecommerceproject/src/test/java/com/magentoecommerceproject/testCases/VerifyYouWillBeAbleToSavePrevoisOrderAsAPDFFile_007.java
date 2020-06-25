@@ -19,6 +19,8 @@ public class VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007 extends BaseCla
 	{
 		driver.get(propObj.getProperty("baseURL"));
 		hpObj=new HomePage(driver);
+		
+		logger.info("**********************Starting Of VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007*********************");
 		hpObj.clickOnMyAccountLink();
 		lpObj=new LoginPage(driver);
 		lpObj.setRegisteredEmailId("samit@gmail.com");
@@ -28,6 +30,7 @@ public class VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007 extends BaseCla
 		dbpObj.clickOnMyOrderLink();
 		boolean orderStatus=dbpObj.verifyingPrevioulyCreatedOrderIsDisplayedInRecentOrdersTable("100012048", "Pending");
 		Thread.sleep(3000);
+		logger.info("***************Verification Of OrderStatus is successful*****************");
 		Assert.assertEquals(orderStatus, true);
 		dbpObj.clickOnViewOrderBtn();
 		Thread.sleep(3000);
@@ -41,6 +44,7 @@ public class VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007 extends BaseCla
 		Thread.sleep(2000);
 		dbpObj.clickOnSaveButton();
 		Thread.sleep(4000);
+		
 
 	}
 

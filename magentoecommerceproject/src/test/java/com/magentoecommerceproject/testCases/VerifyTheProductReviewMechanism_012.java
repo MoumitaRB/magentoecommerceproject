@@ -1,5 +1,7 @@
 package com.magentoecommerceproject.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,18 +21,25 @@ public class VerifyTheProductReviewMechanism_012 extends BaseClass{
 	public DetailedProductPage dpObj;
 	
 	@Test
-	public void verifyingReviewIsApproved() throws InterruptedException
+	public void verifyingReviewIsApproved() throws InterruptedException, IOException
 	{
 		
 		driver.get(" http://live.demoguru99.com/index.php/review/product/list/id/1/");
 		rpObj=new ReviewPage(driver);
+		
+		logger.info("***********************Starting of VerifyTheProductReviewMechanism_012************************");
 		rpObj.setLetUsKnowYourThoughts("One of the best mobiles so far with lots of festures.");
 		rpObj.setSummaryOfYourReview("Picture quality is good.");
 		rpObj.setNickName("New Tester");
 		rpObj.clickOnSubmitReviewBtn();
 		boolean msgStatus=rpObj.verifyingConfirmationMsg("Your review has been accepted for moderation.");
+		
+		logger.info("***********************Verification od MsgStatus is successful***********************");
+		captureScreen(driver, "verifyingReviewIsApproved");
 		Assert.assertEquals(msgStatus, true);
 		Thread.sleep(3000);
+		
+		logger.info("***********************Providing details for login****************************");
 		driver.get(propObj.getProperty("baseURL2"));
 		Thread.sleep(3000);
 		alpObj=new AdminLoginPage(driver);
@@ -44,6 +53,7 @@ public class VerifyTheProductReviewMechanism_012 extends BaseClass{
 		Thread.sleep(3000);
 		ahpObj.clickOnEditLinkAfterSortingTableById();
 		Thread.sleep(5000);
+		logger.info("*************************Approving review is successful**************************");
 		ahpObj.selectOptionsFromStatus2DropDown("Approved");
 		Thread.sleep(2000);
 	    ahpObj.clickonSaveBtn();
@@ -60,7 +70,11 @@ public class VerifyTheProductReviewMechanism_012 extends BaseClass{
 		Thread.sleep(3000);
 		boolean b1=dpObj.verifyingReviewComment("One of the best mobiles so far with lots of festures. REVIEW BY NEW TESTER");
 		Thread.sleep(5000);
+		logger.info("**************************Verification of review comment is successful***********************");
+		captureScreen(driver, "verifyingReviewIsApproved");
 		Assert.assertEquals(b1, true);
+		
+		logger.info("**************************Ending of VerifyTheProductReviewMechanism_012***********************");
 		
 	}
 

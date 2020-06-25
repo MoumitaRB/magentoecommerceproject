@@ -1,5 +1,7 @@
 package com.magentoecommerceproject.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,10 +15,11 @@ public class VerifyInvoiceCanBePrinted_011 extends BaseClass{
 	public AdminHomePage ahpObj;
 	
 	@Test
-	public void verifyingErrorMsg() throws InterruptedException
+	public void verifyingErrorMsg() throws InterruptedException, IOException
 	{
 		driver.get(propObj.getProperty("baseURL2"));
 		alpObj=new AdminLoginPage(driver);
+		logger.info("**************************Staring of VerifyInvoiceCanBePrinted_011**********************");
 		alpObj.setUserName("user01");
 		alpObj.setPassword("guru99com");
 		alpObj.clickOnLoginBtn();
@@ -36,6 +39,8 @@ public class VerifyInvoiceCanBePrinted_011 extends BaseClass{
 		ahpObj.clickOnSubmitBtn();
 		Thread.sleep(2000);
 		boolean errorMsgStatus=ahpObj.verifyingErrorMsg("There are no printable documents related to selected orders.");
+		logger.info("************************Error Msg Status Verification is Successful***********************");
+		captureScreen(driver, "verifyingErrorMsg");
 		Assert.assertEquals(errorMsgStatus, true);
 		Thread.sleep(3000);
 		
@@ -43,7 +48,7 @@ public class VerifyInvoiceCanBePrinted_011 extends BaseClass{
 	}
 	
 	@Test
-	public void verifyingInvoiceIsDownloaded() throws InterruptedException
+	public void verifyingInvoiceIsDownloaded() throws InterruptedException, IOException
 	{   
 		ahpObj=new AdminHomePage(driver);
 		ahpObj.selectStatusOptionsFromDropdown("Complete");
@@ -59,10 +64,12 @@ public class VerifyInvoiceCanBePrinted_011 extends BaseClass{
 		Thread.sleep(10000);
 		boolean b1=ahpObj.isFileExsistsMethod2();
 		Thread.sleep(3000);
+		logger.info("************************File exsists is successful*****************************");
+		captureScreen(driver, "verifyingInvoiceIsDownloaded");
 		Assert.assertEquals(b1, true);
 		
 		Thread.sleep(3000);
-		
+		logger.info("************************Ending of VerifyInvoiceCanBePrinted_011******************");
 	}
 
 }
