@@ -17,7 +17,7 @@
     
     <classes>
     
-      <class name="com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001"/>
+     <class name="com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001"/>
       <class name="com.magentoecommerceproject.testCases.VerifyCostOfProductInListPageAndDetailPageAreEqual_002"/>
       <class name="com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003"/>
       <class name="com.magentoecommerceproject.testCases.VerifyYouAreAbleToCompareTwoProducts_004"/>

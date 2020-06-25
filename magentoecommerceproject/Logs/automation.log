@@ -1,2 +1,31 @@
 [INFO ] 2020-06-25 11:56:53.500 [main] VerifySearchFunctionality_014 - ***********************Starting of VerifySearchFunctionality_014***********************
 [INFO ] 2020-06-25 12:04:34.922 [main] VerifySearchFunctionality_014 - ***********************Starting of VerifySearchFunctionality_014***********************
+[INFO ] 2020-06-25 16:03:05.357 [main] VerifyDiscountCouponWorksCorrectly_009 - ***************************Staring of VerifyDiscountCouponWorksCorrectly_009************************
+[INFO ] 2020-06-25 16:03:15.318 [main] VerifyDiscountCouponWorksCorrectly_009 - **************************Verifying MsgStatus is successful************************
+[INFO ] 2020-06-25 16:03:24.296 [main] VerifyDiscountCouponWorksCorrectly_009 - *********************Verifying couponWorkingStatus is successful*************************
+[INFO ] 2020-06-25 16:03:34.211 [main] ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010 - **************************Starting of ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010*********************************
+[INFO ] 2020-06-25 16:03:44.942 [main] ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010 - ***********************Downloading CSV File************************
+[INFO ] 2020-06-25 16:04:04.527 [main] ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010 - *********************CSV File is Exsists***********************
+[INFO ] 2020-06-25 16:04:04.527 [main] ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010 - ***********************Reading CSV File is successful************************
+[INFO ] 2020-06-25 16:04:25.731 [main] ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010 - *************************Ending of ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010********************************
+[INFO ] 2020-06-25 16:04:34.572 [main] VerifyInvoiceCanBePrinted_011 - **************************Staring of VerifyInvoiceCanBePrinted_011**********************
+[INFO ] 2020-06-25 16:04:56.424 [main] VerifyInvoiceCanBePrinted_011 - ************************Error Msg Status Verification is Successful***********************
+[INFO ] 2020-06-25 16:05:28.148 [main] VerifyInvoiceCanBePrinted_011 - ************************File exsists is successful*****************************
+[INFO ] 2020-06-25 16:05:31.517 [main] VerifyInvoiceCanBePrinted_011 - ************************Ending of VerifyInvoiceCanBePrinted_011******************
+[INFO ] 2020-06-25 16:05:42.067 [main] VerifyTheProductReviewMechanism_012 - ***********************Starting of VerifyTheProductReviewMechanism_012************************
+[INFO ] 2020-06-25 16:05:53.830 [main] VerifyTheProductReviewMechanism_012 - ***********************Verification od MsgStatus is successful***********************
+[INFO ] 2020-06-25 16:05:57.327 [main] VerifyTheProductReviewMechanism_012 - ***********************Providing details for login****************************
+[INFO ] 2020-06-25 16:06:18.499 [main] VerifyTheProductReviewMechanism_012 - *************************Approving review is successful**************************
+[INFO ] 2020-06-25 16:06:49.215 [main] VerifyTheProductReviewMechanism_012 - **************************Verification of review comment is successful***********************
+[INFO ] 2020-06-25 16:06:49.833 [main] VerifyTheProductReviewMechanism_012 - **************************Ending of VerifyTheProductReviewMechanism_012***********************
+[INFO ] 2020-06-25 16:07:07.347 [main] VerifyingSortIsWorkingCorrectly_013 - **************************Starting of VerifyingSortIsWorkingCorrectly_013*************************
+[INFO ] 2020-06-25 16:07:24.357 [main] VerifyingSortIsWorkingCorrectly_013 - **************************Sorting invoice dates in decesding order is successful*************************
+[INFO ] 2020-06-25 16:07:33.504 [main] VerifyingSortIsWorkingCorrectly_013 - *************************Sorting invoice dates in assending order is successful*********************
+[INFO ] 2020-06-25 16:07:37.951 [main] VerifyingSortIsWorkingCorrectly_013 - **************************Ending of VerifyingSortIsWorkingCorrectly_013***********************
+[INFO ] 2020-06-25 16:07:55.737 [main] VerifySearchFunctionality_014 - ***********************Starting of VerifySearchFunctionality_014***********************
+[INFO ] 2020-06-25 16:08:09.371 [main] VerifySearchFunctionality_014 - ***********************Printing the product name and price between Rs 0-150*********************
+[INFO ] 2020-06-25 16:09:22.767 [main] VerifySearchFunctionality_014 - ************************Printing the product name and price between Rs 151-1000**********************
+[INFO ] 2020-06-25 16:09:30.188 [main] VerifySearchFunctionality_014 - ************************Ending of VerifySearchFunctionality_014**************************
+[INFO ] 2020-06-25 16:09:41.854 [main] VerifyDisabledAndBlankFields_015 - **************************Starting of VerifyDisabledAndBlankFields_015*******************************
+[INFO ] 2020-06-25 16:10:07.573 [main] VerifyDisabledAndBlankFields_015 - *************************Verification of disabled status & blanked status are successful***************************
+[INFO ] 2020-06-25 16:10:12.574 [main] VerifyDisabledAndBlankFields_015 - ***********************Ending of VerifyDisabledAndBlankFields_015**********************

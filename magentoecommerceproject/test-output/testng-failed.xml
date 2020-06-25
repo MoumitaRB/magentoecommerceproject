@@ -7,13 +7,13 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.magentoecommerceproject.testCases.ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010">
+      <class name="com.magentoecommerceproject.testCases.VerifyDiscountCouponWorksCorrectly_009">
         <methods>
-          <include name="verifyingConsoleDisplaysAllOrderInformation"/>
+          <include name="verifyingTheGrandTotalAfterApplyingCoupon"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.magentoecommerceproject.testCases.ExportAllOrdersInCSVFilesAndSendTheseFilesToAnotherEmailIdAsAttachment_010 -->
+      </class> <!-- com.magentoecommerceproject.testCases.VerifyDiscountCouponWorksCorrectly_009 -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [magentoecommerceSuite] -->
