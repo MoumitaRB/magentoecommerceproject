@@ -1,5 +1,7 @@
 package com.magentoecommerceproject.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,7 +17,7 @@ public class VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007 extends BaseCla
 	public DashBoardPage dbpObj;
 	
 	@Test
-	public void verifyingPreviouslyCreatedOrderIsDisplayedInRecentOrder() throws InterruptedException
+	public void verifyingPreviouslyCreatedOrderIsDisplayedInRecentOrder() throws InterruptedException, IOException
 	{
 		driver.get(propObj.getProperty("baseURL"));
 		hpObj=new HomePage(driver);
@@ -30,8 +32,17 @@ public class VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007 extends BaseCla
 		dbpObj.clickOnMyOrderLink();
 		boolean orderStatus=dbpObj.verifyingPrevioulyCreatedOrderIsDisplayedInRecentOrdersTable("100012048", "Pending");
 		Thread.sleep(3000);
-		logger.info("***************Verification Of OrderStatus is successful*****************");
-		Assert.assertEquals(orderStatus, true);
+		if(orderStatus==true)
+		{
+			logger.info("******************Verification Of OrderStatus is successful*****************");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.warn("******************Verification of OrderStatus is not successful******************");
+			captureScreen(driver, "verifyingPreviouslyCreatedOrderIsDisplayedInRecentOrder");
+			Assert.assertTrue(false);
+		}
 		dbpObj.clickOnViewOrderBtn();
 		Thread.sleep(3000);
 		dbpObj.clickOnPrintOrderBtn();

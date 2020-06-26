@@ -24,10 +24,19 @@ public class VerifyDiscountCouponWorksCorrectly_009 extends BaseClass{
 		hpObj.clickOnApplyBtn();
 		Thread.sleep(3000);
 		boolean msgStatus=hpObj.verifyingCouponAppliedConfirmationMsg("Coupon code \"GURU50\" was applied.");
-		logger.info("**************************Verifying MsgStatus is successful************************");
-		captureScreen(driver,"verifyingAppliedCouponConfirmationMsg");
-		Assert.assertEquals(msgStatus, true);
-		Thread.sleep(2000);
+		if(msgStatus==true)
+		{
+			logger.info("**************************Verifying MsgStatus is successful************************");
+		    Assert.assertTrue(true);
+		
+		}
+		else
+		{
+		    logger.warn("**************************Verifying MsgStatus is not successful************************");
+		    captureScreen(driver,"verifyingAppliedCouponConfirmationMsg");
+		    Assert.assertTrue(false);
+		    Thread.sleep(2000);
+		}
 	}
 	
 	
@@ -36,10 +45,19 @@ public class VerifyDiscountCouponWorksCorrectly_009 extends BaseClass{
 	{
 		hpObj.gettingDiscountedPriceBy5PercentAfterApplyingCoupon(500.00);
 		boolean couponWorkingStatus=hpObj.verifyingDiscountedPrice();
-		logger.info("*********************Verifying couponWorkingStatus is successful*************************" );
-		captureScreen(driver, "verifyingTheGrandTotalAfterApplyingCoupon");
-		Assert.assertEquals(couponWorkingStatus, true);
-		Thread.sleep(7000);
+		if(couponWorkingStatus==true)
+		{
+		   logger.info("*********************Verifying couponWorkingStatus is successful*************************" );
+		   Assert.assertTrue(true);
+		
+		}
+		else
+		{
+		  logger.warn("*********************Verifying couponWorkingStatus is not successful*************************" );
+		  captureScreen(driver, "verifyingTheGrandTotalAfterApplyingCoupon");
+		  Assert.assertTrue(false);
+		  Thread.sleep(7000);
+		}
 		
 		logger.info("********************Ending of VerifyDiscountCouponWorksCorrectly_009************************");
 	}

@@ -33,9 +33,18 @@ public class VerifyingSortIsWorkingCorrectly_013 extends BaseClass{
 		Thread.sleep(6000);
 		boolean b1=ahpObj.sortingInvoiceDatesInDecendingOrder();
 		Thread.sleep(3000);
-		logger.info("**************************Sorting invoice dates in decesding order is successful*************************");
-		captureScreen(driver, "verifyingSortFunctionalityInDecendingOrder");
-		Assert.assertEquals(b1, true);
+		if(b1==true)
+		{
+		     logger.info("**************************Sorting invoice dates in decesding order is successful*************************");
+		     Assert.assertTrue(true);
+		}
+		else
+		{ 
+			logger.warn("**************************Sorting invoice dates in decesding order is not successful*************************");
+		    captureScreen(driver, "verifyingSortFunctionalityInDecendingOrder");
+		    Assert.assertTrue(false);
+		    Thread.sleep(3000);
+		}
 	}
 
 	@Test(dependsOnMethods="verifyingSortFunctionalityInDecendingOrder")
@@ -47,10 +56,18 @@ public class VerifyingSortIsWorkingCorrectly_013 extends BaseClass{
 		ahpObj.storingInvoiveDatesInArraylists();
 		Thread.sleep(6000);
 		boolean b2=ahpObj.sortingInvoiceDatesInAssendingOrder();
-		logger.info("*************************Sorting invoice dates in assending order is successful*********************");
-		captureScreen(driver, "verifyingSortFunctionalityInAssendingOrder");
-		Assert.assertEquals(b2, true);
-		Thread.sleep(4000);
+		if(b2==true)
+		{
+		   logger.info("*************************Sorting invoice dates in assending order is successful*********************");
+		   Assert.assertTrue(true);
+		}
+		else
+		{ 
+			logger.warn("*************************Sorting invoice dates in assending order is not successful*********************");
+		    captureScreen(driver, "verifyingSortFunctionalityInAssendingOrder");
+		    Assert.assertTrue(false);
+		    Thread.sleep(4000);
+		}
 		
 		logger.info("**************************Ending of VerifyingSortIsWorkingCorrectly_013***********************");
 	}

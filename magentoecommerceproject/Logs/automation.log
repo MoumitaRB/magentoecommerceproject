@@ -29,3 +29,19 @@
 [INFO ] 2020-06-25 16:09:41.854 [main] VerifyDisabledAndBlankFields_015 - **************************Starting of VerifyDisabledAndBlankFields_015*******************************
 [INFO ] 2020-06-25 16:10:07.573 [main] VerifyDisabledAndBlankFields_015 - *************************Verification of disabled status & blanked status are successful***************************
 [INFO ] 2020-06-25 16:10:12.574 [main] VerifyDisabledAndBlankFields_015 - ***********************Ending of VerifyDisabledAndBlankFields_015**********************
+[INFO ] 2020-06-26 12:11:15.370 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - *****************************Starting of VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003******************************
+[INFO ] 2020-06-26 12:11:45.780 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - *********************Error msg verification is successful********************
+[INFO ] 2020-06-26 12:11:53.240 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - ************************Empty cart confirmation msg is successful*******************
+[INFO ] 2020-06-26 12:11:59.933 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - ********************************Ending of VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003*****************************
+[INFO ] 2020-06-26 12:18:31.231 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - *****************************Starting of VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003******************************
+[INFO ] 2020-06-26 12:18:49.357 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - *********************Error msg verification is successful********************
+[INFO ] 2020-06-26 12:18:57.343 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - ************************Empty cart confirmation msg is successful*******************
+[INFO ] 2020-06-26 12:18:57.343 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - ********************************Ending of VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003*****************************
+[INFO ] 2020-06-26 14:20:19.494 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - *****************************Starting of VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003******************************
+[INFO ] 2020-06-26 14:20:36.624 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - *********************Error msg verification is successful********************
+[INFO ] 2020-06-26 14:20:43.604 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - ************************Empty cart confirmation msg is successful*******************
+[INFO ] 2020-06-26 14:20:43.604 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - ********************************Ending of VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003*****************************
+[INFO ] 2020-06-26 14:20:56.055 [main] VerifyingSortIsWorkingCorrectly_013 - **************************Starting of VerifyingSortIsWorkingCorrectly_013*************************
+[INFO ] 2020-06-26 14:21:14.707 [main] VerifyingSortIsWorkingCorrectly_013 - **************************Sorting invoice dates in decesding order is successful*************************
+[INFO ] 2020-06-26 14:21:23.727 [main] VerifyingSortIsWorkingCorrectly_013 - *************************Sorting invoice dates in assending order is successful*********************
+[INFO ] 2020-06-26 14:21:23.727 [main] VerifyingSortIsWorkingCorrectly_013 - **************************Ending of VerifyingSortIsWorkingCorrectly_013***********************

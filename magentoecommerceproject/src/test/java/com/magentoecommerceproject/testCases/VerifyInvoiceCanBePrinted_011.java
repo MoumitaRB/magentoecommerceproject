@@ -39,12 +39,19 @@ public class VerifyInvoiceCanBePrinted_011 extends BaseClass{
 		ahpObj.clickOnSubmitBtn();
 		Thread.sleep(2000);
 		boolean errorMsgStatus=ahpObj.verifyingErrorMsg("There are no printable documents related to selected orders.");
-		logger.info("************************Error Msg Status Verification is Successful***********************");
-		captureScreen(driver, "verifyingErrorMsg");
-		Assert.assertEquals(errorMsgStatus, true);
-		Thread.sleep(3000);
+		if(errorMsgStatus==true)
+		{
+		   logger.info("************************Error Msg Status Verification is Successful***********************");
+		   Assert.assertTrue(true);
+		}
+		else
+		{
+		   logger.warn("************************Error Msg Status Verification is not Successful***********************");
+		   captureScreen(driver, "verifyingErrorMsg");
+		   Assert.assertTrue(false);
+		   Thread.sleep(3000);
 		
-		
+		}
 	}
 	
 	@Test
@@ -64,9 +71,17 @@ public class VerifyInvoiceCanBePrinted_011 extends BaseClass{
 		Thread.sleep(10000);
 		boolean b1=ahpObj.isFileExsistsMethod2();
 		Thread.sleep(3000);
-		logger.info("************************File exsists is successful*****************************");
-		captureScreen(driver, "verifyingInvoiceIsDownloaded");
-		Assert.assertEquals(b1, true);
+		if(b1==true)
+		{
+		  logger.info("************************File exsists is successful*****************************");
+		  Assert.assertTrue(true);
+		}
+		else
+		{ 
+			logger.warn("************************File exsists is not successful*****************************");
+		    captureScreen(driver, "verifyingInvoiceIsDownloaded");
+		    Assert.assertTrue(false);
+		}
 		
 		Thread.sleep(3000);
 		logger.info("************************Ending of VerifyInvoiceCanBePrinted_011******************");

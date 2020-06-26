@@ -32,7 +32,6 @@ public class VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 extends BaseCla
 		dbpObj.clickOnReorderLinkInRecentOrder("100012063");
 		Thread.sleep(2000);
 		dbpObj.changeTheQuantityAndClickOnUpdateBtn("10");
-		//Thread.sleep(2000);
 		boolean grandTotalStatus=dbpObj.verifyTheGrandTotalIsChanged("GRAND TOTAL", 6200.00);
 		Thread.sleep(4000);
 		dbpObj.clickOnProceedToCheckOutBtn();

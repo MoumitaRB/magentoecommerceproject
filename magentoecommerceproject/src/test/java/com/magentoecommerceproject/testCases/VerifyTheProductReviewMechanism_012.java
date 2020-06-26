@@ -33,11 +33,18 @@ public class VerifyTheProductReviewMechanism_012 extends BaseClass{
 		rpObj.setNickName("New Tester");
 		rpObj.clickOnSubmitReviewBtn();
 		boolean msgStatus=rpObj.verifyingConfirmationMsg("Your review has been accepted for moderation.");
-		
-		logger.info("***********************Verification od MsgStatus is successful***********************");
-		captureScreen(driver, "verifyingReviewIsApproved");
-		Assert.assertEquals(msgStatus, true);
-		Thread.sleep(3000);
+		if(msgStatus==true)
+		{
+		    logger.info("***********************Verification of MsgStatus is successful***********************");
+		    Assert.assertTrue(true);
+		}
+		else
+		{ 
+			logger.warn("***********************Verification of MsgStatus is not successful***********************");
+		    captureScreen(driver, "verifyingReviewIsApproved");
+	    	Assert.assertTrue(false);
+		    Thread.sleep(3000);
+		}
 		
 		logger.info("***********************Providing details for login****************************");
 		driver.get(propObj.getProperty("baseURL2"));
@@ -70,9 +77,17 @@ public class VerifyTheProductReviewMechanism_012 extends BaseClass{
 		Thread.sleep(3000);
 		boolean b1=dpObj.verifyingReviewComment("One of the best mobiles so far with lots of festures. REVIEW BY NEW TESTER");
 		Thread.sleep(5000);
-		logger.info("**************************Verification of review comment is successful***********************");
-		captureScreen(driver, "verifyingReviewIsApproved");
-		Assert.assertEquals(b1, true);
+		if(b1==true)
+		{
+		   logger.info("**************************Verification of review comment is successful***********************");
+		   Assert.assertTrue(true);
+		}
+		else
+		{
+	       logger.warn("**************************Verification of review comment is not successful***********************");
+		   captureScreen(driver, "verifyingReviewIsApproved");
+		   Assert.assertTrue(false);
+		}
 		
 		logger.info("**************************Ending of VerifyTheProductReviewMechanism_012***********************");
 		

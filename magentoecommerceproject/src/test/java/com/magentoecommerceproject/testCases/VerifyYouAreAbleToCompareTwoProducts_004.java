@@ -41,7 +41,8 @@ public void verifyingCompareProductsInThePopUpWindow() throws InterruptedExcepti
 		  captureScreen(driver, "verifyingCompareProductsInThePopUpWindow");
 		  Assert.assertTrue(false);
 	  }
-   logger.info("************************Ending of VerifyYouAreAbleToCompareTwoProducts_004***************************" );
+	  
+     logger.info("************************Ending of VerifyYouAreAbleToCompareTwoProducts_004***************************" );
  }
   
 }

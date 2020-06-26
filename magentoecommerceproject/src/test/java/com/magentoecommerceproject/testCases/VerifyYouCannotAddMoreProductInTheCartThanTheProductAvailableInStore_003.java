@@ -34,7 +34,7 @@ public class VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStor
 		   }
 		   else
 		   {   
-			   logger.info("***********************Error msg verification is not successful******************");
+			   logger.warn("***********************Error msg verification is not successful******************");
 			   captureScreen(driver, "verifyingMoreProductCanNotAddToTheCartThanAvailableInStore");
 		       Assert.assertTrue(false);
 		   }
@@ -46,11 +46,18 @@ public class VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStor
 	public void verifyingEmptyCartConfirmationMsg() throws InterruptedException, IOException
 	{
 		boolean emptyCartMsgStatus= pcopObj.verifyingEmptyCartMsg("SHOPPING CART IS EMPTY");
-		
-		logger.info("************************Empty cart confirmation msg is successful*******************");
-		captureScreen(driver, "verifyingEmptyCartConfirmationMsg");
-		Assert.assertEquals(emptyCartMsgStatus, true);
-		Thread.sleep(6000);
+		if(emptyCartMsgStatus==true)
+		{
+		  logger.info("************************Empty cart confirmation msg is successful*******************");
+		  Assert.assertTrue(true);
+		}
+		else
+		{
+		  logger.warn("***********************Empty cart confirmation msg is not successful********************");
+		  captureScreen(driver, "verifyingEmptyCartConfirmationMsg");
+		  Assert.assertEquals(emptyCartMsgStatus, true);
+		  Thread.sleep(6000);
+		}
 		
 		logger.info("********************************Ending of VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003*****************************");
 	}
