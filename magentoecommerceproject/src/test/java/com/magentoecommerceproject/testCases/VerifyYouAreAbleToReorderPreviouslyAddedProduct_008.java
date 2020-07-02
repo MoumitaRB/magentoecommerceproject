@@ -29,7 +29,7 @@ public class VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 extends BaseCla
 		lpObj.setRegisteredPassword("samitroy");
 		lpObj.clickOnLoginBtn();
 		dbpObj=new DashBoardPage(driver);
-		dbpObj.clickOnReorderLinkInRecentOrder("100012091");
+		dbpObj.clickOnReorderLinkInRecentOrder("100012481");
 		Thread.sleep(2000);
 		dbpObj.changeTheQuantityAndClickOnUpdateBtn("10");
 		boolean grandTotalStatus=dbpObj.verifyTheGrandTotalIsChanged("GRAND TOTAL", 6150.00);
