@@ -7,13 +7,13 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.magentoecommerceproject.testCases.VerifyDiscountCouponWorksCorrectly_009">
+      <class name="com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008">
         <methods>
-          <include name="verifyingTheGrandTotalAfterApplyingCoupon"/>
+          <include name="verifyingGrandTotalIsChangedAfterUpdatingTheProductQuantity"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.magentoecommerceproject.testCases.VerifyDiscountCouponWorksCorrectly_009 -->
+      </class> <!-- com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [magentoecommerceSuite] -->

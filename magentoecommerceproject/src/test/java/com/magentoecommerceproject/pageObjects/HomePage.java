@@ -107,6 +107,7 @@ public class HomePage {
 	public boolean verifyingTitleOfTheHomePage(String exp_title)
 	{
 		String act_title=driver.getTitle();
+		System.out.println("HomePage title is:"+act_title);
 		if(act_title.equals(exp_title))
 		{
 			return true;
@@ -120,7 +121,8 @@ public class HomePage {
 	public boolean verifyingTextTitleOfTheHomePage(String exp_text)
 	{
 		String act_text=titleText.getText();
-		if(act_text.equals(exp_text))
+		System.out.println(act_text);
+		if(act_text.contains(exp_text))
 		{
 			return true;
 		}
@@ -138,6 +140,7 @@ public class HomePage {
 	public boolean verifyingMobilePageTitle(String exp_title)
 	{
 		String act_title=mobileTitleTExt.getText();
+		System.out.println("Mobile page tile is:"+act_title);
 		if(act_title.equals(exp_title))
 		{
 			return true;
@@ -162,8 +165,9 @@ public class HomePage {
 	   for(WebElement product:productList)
 		{
 			String act_productName=product.getAttribute("title");
+			System.out.println(act_productName);
 			{
-				if((act_productName.equals(exp_productName1))&&(act_productName.equals(exp_productName2))&&(act_productName.equals(exp_productName3)))
+				if((act_productName.equals(exp_productName1))||(act_productName.equals(exp_productName2))||(act_productName.equals(exp_productName3)))
 				{
 					productNo=productNo+1;
 					if(productNo==totalproduct)

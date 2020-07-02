@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="magentoecommerceSuite" duration-ms="94916" started-at="2020-06-26T19:19:50Z" finished-at="2020-06-26T19:21:24Z">
+  <suite name="magentoecommerceSuite" duration-ms="75397" started-at="2020-07-02T17:25:13Z" finished-at="2020-07-02T17:26:29Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="94916" started-at="2020-06-26T19:19:50Z" finished-at="2020-06-26T19:21:24Z">
-      <class name="com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013@1757cd72]" name="setUp" is-config="true" duration-ms="6620" started-at="2020-06-26T19:20:44Z" finished-at="2020-06-26T19:20:51Z">
+    <test name="ChromeTest" duration-ms="75397" started-at="2020-07-02T17:25:13Z" finished-at="2020-07-02T17:26:29Z">
+      <class name="com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008@561b6512]" name="setUp" is-config="true" duration-ms="12634" started-at="2020-07-02T17:25:14Z" finished-at="2020-07-02T17:25:26Z">
           <params>
             <param index="0">
               <value>
@@ -18,44 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyingSortFunctionalityInDecendingOrder()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013@1757cd72]" name="verifyingSortFunctionalityInDecendingOrder" duration-ms="23176" started-at="2020-06-26T19:20:51Z" finished-at="2020-06-26T19:21:14Z">
+        <test-method status="PASS" signature="verifyingGrandTotalIsChangedAfterUpdatingTheProductQuantity()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008@561b6512]" name="verifyingGrandTotalIsChangedAfterUpdatingTheProductQuantity" duration-ms="61059" started-at="2020-07-02T17:25:26Z" finished-at="2020-07-02T17:26:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyingSortFunctionalityInDecendingOrder -->
-        <test-method status="PASS" signature="verifyingSortFunctionalityInAssendingOrder()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013@1757cd72]" name="verifyingSortFunctionalityInAssendingOrder" duration-ms="9011" started-at="2020-06-26T19:21:14Z" depends-on-methods="com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013.verifyingSortFunctionalityInDecendingOrder" finished-at="2020-06-26T19:21:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingSortFunctionalityInAssendingOrder -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013@1757cd72]" name="tearDown" is-config="true" duration-ms="1229" started-at="2020-06-26T19:21:23Z" finished-at="2020-06-26T19:21:24Z">
+        </test-method> <!-- verifyingGrandTotalIsChangedAfterUpdatingTheProductQuantity -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008@561b6512]" name="tearDown" is-config="true" duration-ms="1236" started-at="2020-07-02T17:26:27Z" finished-at="2020-07-02T17:26:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013 -->
-      <class name="com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003@2e377400]" name="setUp" is-config="true" duration-ms="25580" started-at="2020-06-26T19:19:50Z" finished-at="2020-06-26T19:20:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyingMoreProductCanNotAddToTheCartThanAvailableInStore()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003@2e377400]" name="verifyingMoreProductCanNotAddToTheCartThanAvailableInStore" duration-ms="23056" started-at="2020-06-26T19:20:16Z" finished-at="2020-06-26T19:20:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingMoreProductCanNotAddToTheCartThanAvailableInStore -->
-        <test-method status="PASS" signature="verifyingEmptyCartConfirmationMsg()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003@2e377400]" name="verifyingEmptyCartConfirmationMsg" duration-ms="3927" started-at="2020-06-26T19:20:39Z" depends-on-methods="com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003.verifyingMoreProductCanNotAddToTheCartThanAvailableInStore" finished-at="2020-06-26T19:20:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingEmptyCartConfirmationMsg -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003@2e377400]" name="tearDown" is-config="true" duration-ms="1301" started-at="2020-06-26T19:20:43Z" finished-at="2020-06-26T19:20:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 -->
+      </class> <!-- com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 -->
     </test> <!-- ChromeTest -->
   </suite> <!-- magentoecommerceSuite -->
 </testng-results>

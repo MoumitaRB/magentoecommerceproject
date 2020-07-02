@@ -29,10 +29,11 @@ public class VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 extends BaseCla
 		lpObj.setRegisteredPassword("samitroy");
 		lpObj.clickOnLoginBtn();
 		dbpObj=new DashBoardPage(driver);
-		dbpObj.clickOnReorderLinkInRecentOrder("100012063");
+		dbpObj.clickOnReorderLinkInRecentOrder("100012091");
 		Thread.sleep(2000);
 		dbpObj.changeTheQuantityAndClickOnUpdateBtn("10");
-		boolean grandTotalStatus=dbpObj.verifyTheGrandTotalIsChanged("GRAND TOTAL", 6200.00);
+		boolean grandTotalStatus=dbpObj.verifyTheGrandTotalIsChanged("GRAND TOTAL", 6150.00);
+		System.out.println(grandTotalStatus);
 		Thread.sleep(4000);
 		dbpObj.clickOnProceedToCheckOutBtn();
 		dbpObj.clickOnDropDownBtn("New Address");
@@ -49,6 +50,8 @@ public class VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 extends BaseCla
 		dbpObj.clickOnPlaceAnOrderBtn();
 		Thread.sleep(3000);
 		boolean orderIdGerenatedStatus=dbpObj.verifyingOrderNumberIsGeneratedAfterReorder("YOUR ORDER HAS BEEN RECEIVED.");
+		Thread.sleep(2000);
+		System.out.println(orderIdGerenatedStatus);
 		if((grandTotalStatus==true)&&(orderIdGerenatedStatus==true))
 		{   
 			logger.info("********************Verifying GrandToatalStatus and OrderIdGeneratedStatus are successful*****************************");

@@ -45,3 +45,40 @@
 [INFO ] 2020-06-26 14:21:14.707 [main] VerifyingSortIsWorkingCorrectly_013 - **************************Sorting invoice dates in decesding order is successful*************************
 [INFO ] 2020-06-26 14:21:23.727 [main] VerifyingSortIsWorkingCorrectly_013 - *************************Sorting invoice dates in assending order is successful*********************
 [INFO ] 2020-06-26 14:21:23.727 [main] VerifyingSortIsWorkingCorrectly_013 - **************************Ending of VerifyingSortIsWorkingCorrectly_013***********************
+[INFO ] 2020-07-02 10:40:16.872 [main] VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007 - **********************Starting Of VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007*********************
+[INFO ] 2020-07-02 10:40:35.860 [main] VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007 - ******************Verification Of OrderStatus is successful*****************
+[INFO ] 2020-07-02 10:43:11.013 [main] VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007 - **********************Starting Of VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007*********************
+[INFO ] 2020-07-02 10:43:30.344 [main] VerifyYouWillBeAbleToSavePrevoisOrderAsAPDFFile_007 - ******************Verification Of OrderStatus is successful*****************
+[INFO ] 2020-07-02 10:52:43.498 [main] VerifyItemInMobileListPageCanBeSortedByName_001 - **********************Starting VerifyItemInMobileListPageCanBeSortedByName_001*********************
+[WARN ] 2020-07-02 10:52:43.621 [main] VerifyItemInMobileListPageCanBeSortedByName_001 - ******************Title of homepage and text title of the home page verification are not successful*********************
+[INFO ] 2020-07-02 10:52:54.288 [main] VerifyCostOfProductInListPageAndDetailPageAreEqual_002 - **********************Starting of VerifyCostOfProductInListPageAndDetailPageAreEqual_002***************************
+[INFO ] 2020-07-02 10:53:17.171 [main] VerifyCostOfProductInListPageAndDetailPageAreEqual_002 - *****************************Cost of product in the list page and detailed page are equal**************************
+[INFO ] 2020-07-02 10:53:21.172 [main] VerifyCostOfProductInListPageAndDetailPageAreEqual_002 - ***************************Ending of VerifyCostOfProductInListPageAndDetailPageAreEqual_002***************************
+[INFO ] 2020-07-02 10:53:30.713 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - *****************************Starting of VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003******************************
+[INFO ] 2020-07-02 10:53:51.673 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - *********************Error msg verification is successful********************
+[INFO ] 2020-07-02 10:53:58.603 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - ************************Empty cart confirmation msg is successful*******************
+[INFO ] 2020-07-02 10:53:58.604 [main] VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003 - ********************************Ending of VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003*****************************
+[INFO ] 2020-07-02 10:54:07.428 [main] VerifyYouAreAbleToCompareTwoProducts_004 - ***********************Starting of VerifyYouAreAbleToCompareTwoProducts_004************************
+[INFO ] 2020-07-02 10:54:42.308 [main] VerifyYouAreAbleToCompareTwoProducts_004 - *************************Popup window msg verification is successful******************
+[INFO ] 2020-07-02 10:54:42.308 [main] VerifyYouAreAbleToCompareTwoProducts_004 - ************************Ending of VerifyYouAreAbleToCompareTwoProducts_004***************************
+[INFO ] 2020-07-02 10:54:51.251 [main] VerifyComparingTwoProducts_000 - ****************Starting VerifyComparingTwoProducts_000***********************
+[INFO ] 2020-07-02 10:55:31.224 [main] VerifyComparingTwoProducts_000 - *********************Popup Window And HomePage Title Verification Are Successful*********************
+[INFO ] 2020-07-02 10:55:41.862 [main] VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005 - *************************Starting for VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005************************
+[INFO ] 2020-07-02 10:56:34.439 [main] VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006 - *******************Starting of VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006**********************
+[INFO ] 2020-07-02 10:57:01.817 [main] VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006 - *******************Providing informatiom for filling the billing address******************
+[WARN ] 2020-07-02 10:57:36.952 [main] VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006 - **********************Verifying TaxrateStatus TotalStatus and OrderStatus are not successful**********************
+[INFO ] 2020-07-02 11:48:24.789 [main] VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005 - *************************Starting for VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005************************
+[INFO ] 2020-07-02 11:48:39.561 [main] VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005 - **************************Providing information for filling registration form********************
+[INFO ] 2020-07-02 11:49:03.593 [main] VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005 - **********************Registration is done and sharing wishlist is successful**************************
+[INFO ] 2020-07-02 11:49:06.596 [main] VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005 - ************************Ending of VerifyYouCanCreateAnAccountInEcommerceSiteAndShareWishList_005***************************
+[INFO ] 2020-07-02 11:52:00.213 [main] VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006 - *******************Starting of VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006**********************
+[INFO ] 2020-07-02 11:52:27.369 [main] VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006 - *******************Providing informatiom for filling the billing address******************
+[INFO ] 2020-07-02 11:53:01.999 [main] VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006 - ********************Verifyng TaxrateStatus TotalStatus and OrderStatus are successful**********************
+[INFO ] 2020-07-02 11:53:02.002 [main] VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006 - **********************Ending of VerifyUserIsAbleToPurchaseProductUsingRegisteredEmailId_006***************************
+[INFO ] 2020-07-02 11:58:50.767 [main] VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 - *********************Starting Of VerifyYouAreAbleToReorderPreviouslyAddedProduct_008************************
+[WARN ] 2020-07-02 11:59:45.056 [main] VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 - ***********************Verifying GrandToatalStatus and OrderIdGeneratedStatus are not successful********************
+[INFO ] 2020-07-02 12:12:41.879 [main] VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 - *********************Starting Of VerifyYouAreAbleToReorderPreviouslyAddedProduct_008************************
+[WARN ] 2020-07-02 12:13:42.730 [main] VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 - ***********************Verifying GrandToatalStatus and OrderIdGeneratedStatus are not successful********************
+[INFO ] 2020-07-02 12:22:04.865 [main] VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 - *********************Starting Of VerifyYouAreAbleToReorderPreviouslyAddedProduct_008************************
+[INFO ] 2020-07-02 12:25:28.456 [main] VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 - *********************Starting Of VerifyYouAreAbleToReorderPreviouslyAddedProduct_008************************
+[INFO ] 2020-07-02 12:26:23.922 [main] VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 - ********************Verifying GrandToatalStatus and OrderIdGeneratedStatus are successful*****************************

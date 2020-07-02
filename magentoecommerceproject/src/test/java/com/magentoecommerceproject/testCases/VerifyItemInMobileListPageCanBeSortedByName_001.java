@@ -15,7 +15,7 @@ public class VerifyItemInMobileListPageCanBeSortedByName_001 extends BaseClass{
 	public HomePage hpObj;
 	
 	@Test
-	public void verifyingHomePageTitleTest() throws IOException
+	public void verifyingHomePageTitleTest() throws IOException, InterruptedException
 	{   
 		driver.get(propObj.getProperty("baseURL"));
 		hpObj=new HomePage(driver);
@@ -23,6 +23,7 @@ public class VerifyItemInMobileListPageCanBeSortedByName_001 extends BaseClass{
 		
 		boolean titleResult=hpObj.verifyingTitleOfTheHomePage("Home page");
 		boolean textTitleResult=hpObj.verifyingTextTitleOfTheHomePage("THIS IS DEMO SITE FOR");
+		Thread.sleep(3000);
 		{
 			if((titleResult==true)&&(textTitleResult==true))
 			{   
@@ -35,6 +36,7 @@ public class VerifyItemInMobileListPageCanBeSortedByName_001 extends BaseClass{
 				captureScreen(driver, "verifyingHomePageTitleTest");
 				Assert.assertTrue(false);
 			}
+			Thread.sleep(3000);
 		}
 	
 	}
@@ -44,7 +46,7 @@ public class VerifyItemInMobileListPageCanBeSortedByName_001 extends BaseClass{
 	{  
 		hpObj.clickOnMobileLink();
 		Thread.sleep(3000);
-		boolean mpTitleStatus=hpObj.verifyingMobilePageTitle("Mobile");
+		boolean mpTitleStatus=hpObj.verifyingMobilePageTitle("MOBILE");
 		if(mpTitleStatus==true)
 		{    
 			logger.info("****************************Mobile page title verification is successful********************");
@@ -57,6 +59,7 @@ public class VerifyItemInMobileListPageCanBeSortedByName_001 extends BaseClass{
 			Assert.assertTrue(false);
 		}
 		
+		Thread.sleep(3000);
 	}
 	
 	@Test(dependsOnMethods="verifyingMobilePageTitleTest")
@@ -79,7 +82,7 @@ public class VerifyItemInMobileListPageCanBeSortedByName_001 extends BaseClass{
 	}
 	
 	@Test(dependsOnMethods="verifyingAll3ProductsAvailableUnderNameDropDown")
-	public void verifyingAll3ProductsSortedByNameTest() throws IOException
+	public void verifyingAll3ProductsSortedByNameTest() throws IOException, InterruptedException
 	{
 		boolean sortedStatus=hpObj.verifyingAll3ProductsSortedByName();
 		if(sortedStatus==true)
@@ -94,6 +97,7 @@ public class VerifyItemInMobileListPageCanBeSortedByName_001 extends BaseClass{
 			Assert.assertTrue(false);
 		}
 		
+		Thread.sleep(3000);
 		logger.info("*********************Ending of VerifyItemInMobileListPageCanBeSortedByName_001***********************");
 	}
 	
