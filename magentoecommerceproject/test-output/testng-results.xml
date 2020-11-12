@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="magentoecommerceSuite" duration-ms="75397" started-at="2020-07-02T17:25:13Z" finished-at="2020-07-02T17:26:29Z">
+  <suite started-at="2020-11-11T15:57:28 PST" name="magentoecommerceSuite" finished-at="2020-11-11T15:58:03 PST" duration-ms="35024">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="75397" started-at="2020-07-02T17:25:13Z" finished-at="2020-07-02T17:26:29Z">
-      <class name="com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008@561b6512]" name="setUp" is-config="true" duration-ms="12634" started-at="2020-07-02T17:25:14Z" finished-at="2020-07-02T17:25:26Z">
+    <test started-at="2020-11-11T15:57:28 PST" name="ChromeTest" finished-at="2020-11-11T15:58:03 PST" duration-ms="35024">
+      <class name="com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001@4cc61eb1]" started-at="2020-11-11T15:57:28 PST" name="setUp" finished-at="2020-11-11T15:57:34 PST" duration-ms="5895" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyingGrandTotalIsChangedAfterUpdatingTheProductQuantity()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008@561b6512]" name="verifyingGrandTotalIsChangedAfterUpdatingTheProductQuantity" duration-ms="61059" started-at="2020-07-02T17:25:26Z" finished-at="2020-07-02T17:26:27Z">
+        <test-method signature="verifyingHomePageTitleTest()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001@4cc61eb1]" started-at="2020-11-11T15:57:34 PST" name="verifyingHomePageTitleTest" finished-at="2020-11-11T15:57:41 PST" duration-ms="7178" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyingGrandTotalIsChangedAfterUpdatingTheProductQuantity -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008@561b6512]" name="tearDown" is-config="true" duration-ms="1236" started-at="2020-07-02T17:26:27Z" finished-at="2020-07-02T17:26:29Z">
+        </test-method> <!-- verifyingHomePageTitleTest -->
+        <test-method signature="verifyingMobilePageTitleTest()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001@4cc61eb1]" started-at="2020-11-11T15:57:41 PST" name="verifyingMobilePageTitleTest" finished-at="2020-11-11T15:57:48 PST" depends-on-methods="com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001.verifyingHomePageTitleTest" duration-ms="6499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingMobilePageTitleTest -->
+        <test-method signature="verifyingAll3ProductsAvailableUnderNameDropDown()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001@4cc61eb1]" started-at="2020-11-11T15:57:48 PST" name="verifyingAll3ProductsAvailableUnderNameDropDown" finished-at="2020-11-11T15:57:59 PST" depends-on-methods="com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001.verifyingMobilePageTitleTest" duration-ms="11617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingAll3ProductsAvailableUnderNameDropDown -->
+        <test-method signature="verifyingAll3ProductsSortedByNameTest()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001@4cc61eb1]" started-at="2020-11-11T15:57:59 PST" name="verifyingAll3ProductsSortedByNameTest" finished-at="2020-11-11T15:58:02 PST" depends-on-methods="com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001.verifyingAll3ProductsAvailableUnderNameDropDown" duration-ms="3050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingAll3ProductsSortedByNameTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001@4cc61eb1]" started-at="2020-11-11T15:58:02 PST" name="tearDown" finished-at="2020-11-11T15:58:03 PST" duration-ms="658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.magentoecommerceproject.testCases.VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 -->
+      </class> <!-- com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001 -->
     </test> <!-- ChromeTest -->
   </suite> <!-- magentoecommerceSuite -->
 </testng-results>

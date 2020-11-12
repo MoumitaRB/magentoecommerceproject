@@ -18,7 +18,7 @@
     <classes>
     
       <class name="com.magentoecommerceproject.testCases.VerifyItemInMobileListPageCanBeSortedByName_001"/>
-      <class name="com.magentoecommerceproject.testCases.VerifyCostOfProductInListPageAndDetailPageAreEqual_002"/>
+      <!-- <class name="com.magentoecommerceproject.testCases.VerifyCostOfProductInListPageAndDetailPageAreEqual_002"/>
       <class name="com.magentoecommerceproject.testCases.VerifyYouCannotAddMoreProductInTheCartThanTheProductAvailableInStore_003"/>
       <class name="com.magentoecommerceproject.testCases.VerifyYouAreAbleToCompareTwoProducts_004"/>
       <class name="com.magentoecommerceproject.testCases.VerifyComparingTwoProducts_000"/>
@@ -32,7 +32,7 @@
       <class name="com.magentoecommerceproject.testCases.VerifyTheProductReviewMechanism_012"/>
       <class name="com.magentoecommerceproject.testCases.VerifyingSortIsWorkingCorrectly_013"/>
       <class name="com.magentoecommerceproject.testCases.VerifySearchFunctionality_014"/>
-      <class name="com.magentoecommerceproject.testCases.VerifyDisabledAndBlankFields_015"/>
+      <class name="com.magentoecommerceproject.testCases.VerifyDisabledAndBlankFields_015"/>-->
       
     </classes>
     

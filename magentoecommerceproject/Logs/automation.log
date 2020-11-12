@@ -82,3 +82,9 @@
 [INFO ] 2020-07-02 12:22:04.865 [main] VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 - *********************Starting Of VerifyYouAreAbleToReorderPreviouslyAddedProduct_008************************
 [INFO ] 2020-07-02 12:25:28.456 [main] VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 - *********************Starting Of VerifyYouAreAbleToReorderPreviouslyAddedProduct_008************************
 [INFO ] 2020-07-02 12:26:23.922 [main] VerifyYouAreAbleToReorderPreviouslyAddedProduct_008 - ********************Verifying GrandToatalStatus and OrderIdGeneratedStatus are successful*****************************
+[INFO ] 2020-11-11 15:57:35.472 [main] VerifyItemInMobileListPageCanBeSortedByName_001 - **********************Starting VerifyItemInMobileListPageCanBeSortedByName_001*********************
+[INFO ] 2020-11-11 15:57:38.518 [main] VerifyItemInMobileListPageCanBeSortedByName_001 - **********************Title of HomePage and Text Title of the HomePage Verification are successful*****************
+[INFO ] 2020-11-11 15:57:45.034 [main] VerifyItemInMobileListPageCanBeSortedByName_001 - ****************************Mobile page title verification is successful********************
+[INFO ] 2020-11-11 15:57:56.656 [main] VerifyItemInMobileListPageCanBeSortedByName_001 - **********************All three products are available under dropdown***************************
+[INFO ] 2020-11-11 15:57:59.708 [main] VerifyItemInMobileListPageCanBeSortedByName_001 - **********************All three products are sorted by name*********************
+[INFO ] 2020-11-11 15:58:02.710 [main] VerifyItemInMobileListPageCanBeSortedByName_001 - *********************Ending of VerifyItemInMobileListPageCanBeSortedByName_001***********************
